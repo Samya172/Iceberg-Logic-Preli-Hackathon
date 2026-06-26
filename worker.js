@@ -1,3 +1,15 @@
+
+export default {
+  async fetch(request, env, ctx) {
+    // This routes the incoming HTTP traffic directly into your handleRequest engine
+    return await handleRequest(request, env);
+  }
+};
+
+
+
+
+
 // File: worker.js
 import { analyzeTicketWithLLM } from './apicall.js';
 
